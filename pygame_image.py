@@ -18,9 +18,10 @@ def main():
 
         screen.blit(bg_img, [0, 0])
         screen.blit(kk_img, [300, 200])
+        kk_img = pg.transform.flip(kk_img, True, False)
         pg.display.update()
         tmr += 1        
-        clock.tick(100)
+        clock.tick(200)
 
 
 if __name__ == "__main__":

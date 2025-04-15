@@ -18,8 +18,6 @@ def main():
 
         screen.blit(bg_img, [0, 0])
         screen.blit(kk_img, [300, 200])
-        kk_img = pg.transform.flip(kk_img, True, False)
-        kk_img = pg.transform.rotozoom(kk_img, 10, 1.0)
         pg.display.update()
         tmr += 1        
         clock.tick(100)
